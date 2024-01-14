@@ -1,0 +1,489 @@
+.OFFOFF {
+	background-color: #d7d7d7;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+
+.OFFOFF .div {
+	background-color: #d7d7d7;
+	border: 1px solid;
+	border-color: #0000001a;
+	width: 100%;
+	/*  width: 1920px;
+  height: 922px;*/
+	height: 100%;
+	position: relative;
+}
+
+
+/*menu bar { */
+/*menu bar animetion { */
+.OFFOFF .menu-bar {
+	position: absolute;
+	width: 3.5%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #f5f5f5;
+}
+
+
+
+#menu-bar {
+	width: 3.5%;
+	transition: width 0.4s;
+	/* 幅が変わるアニメーション */
+}
+
+#menu-bar.expanded {
+
+	width: 20%;
+
+}
+
+/* } menu bar animetion*/
+
+
+/*setting-botton ここから*/
+.OFFOFF .setting-button {
+	position: absolute;
+	width: 58px;
+	height: 56px;
+	top: 90%;
+	left: 8%;
+}
+
+.OFFOFF .overlap-group {
+	position: absolute;
+	height: 56px;
+}
+
+.OFFOFF .rectangle {
+	width: 58px;
+	height: 12px;
+	top: 22px;
+	border-radius: 4px;
+	position: absolute;
+	left: 0;
+	background-color: #d9d9d9;
+}
+
+.OFFOFF .rectangle-2 {
+	width: 58px;
+	height: 12px;
+	top: 22px;
+	border-radius: 4px;
+	transform: rotate(-60deg);
+	position: absolute;
+	left: 0;
+	background-color: #d9d9d9;
+}
+
+.OFFOFF .rectangle-3 {
+	width: 58px;
+	height: 12px;
+	top: 22px;
+	border-radius: 4px;
+	transform: rotate(60deg);
+	position: absolute;
+	left: 0;
+	background-color: #d9d9d9;
+}
+
+.OFFOFF .ellipse {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 8px;
+	left: 9px;
+	background-color: #d9d9d9;
+	border-radius: 20px;
+}
+
+.OFFOFF .ellipse-2 {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 18px;
+	left: 19px;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+}
+
+#setting-button {
+	transition: left 0.4s;
+}
+
+#setting-button.expanded {
+	left: 82%;
+}
+
+/*setting-button ここまで*/
+/*L_selectButton ここから*/
+
+
+.OFFOFF .L1 {
+	position: absolute;
+	width: 58px;
+	height: 58px;
+	top: 113px;
+	left: 8.2%;
+}
+
+.OFFOFF .L2 {
+	position: absolute;
+	width: 58px;
+	height: 58px;
+	top: 185px;
+	left: 8.2%;
+}
+
+.OFFOFF .L3 {
+	position: absolute;
+	width: 58px;
+	height: 58px;
+	top: 257px;
+	left: 8.2%;
+}
+
+.OFFOFF .div-wrapper {
+	position: relative;
+	width: 56px;
+	height: 58px;
+	background-color: #d9d9d9;
+	border-radius: 10px;
+}
+
+.OFFOFF .text-wrapper {
+	position: absolute;
+	top: 11px;
+	left: 18px;
+	font-family: "Inter", Helvetica;
+	font-weight: 400;
+	color: #222222;
+	font-size: 30px;
+	letter-spacing: 0;
+	line-height: normal;
+	white-space: nowrap;
+}
+
+/* IDベースのセレクタをクラスベースに変更。 */
+.L-button {
+
+	transition: width 0.4s;
+}
+
+.L-button-div {
+	transition: width 0.4s;
+}
+
+
+
+/* expandedクラスが追加された時に幅を変更するように設定。 */
+.L-button.expanded {
+	left: 2%;
+	width: 100%;
+}
+
+.L-button-div.expanded {
+	width: 95%;
+}
+
+/*title ここから*/
+
+
+.OFFOFF .title {
+	position: absolute;
+	top: 14px;
+	left: 0px;
+	width: 200px;
+	font-size: 36px;
+	height: 40px;
+	opacity: 0;
+}
+
+.OFFOFF .rectangle-title-text {
+	width: 200px;
+	height: 10px;
+	top: 32px;
+	border-radius: 10px;
+	position: absolute;
+	background-color: #d9d9d9;
+	border-radius: 10px;
+
+}
+
+.OFFOFF .title-text-wrapper {
+	position: absolute;
+	font-family: "Inter", Helvetica;
+	font-weight: 400;
+	color: #222222;
+	letter-spacing: 0;
+	line-height: normal;
+	white-space: nowrap;
+	left: 48px;
+}
+
+#title {
+	transition: opacity 0.4s, left 0.4s;
+	opacity: 0;
+}
+
+#title.expanded {
+	left: 80px;
+	opacity: 1;
+}
+
+
+
+/*title ここまで*/
+/* } L_selectButton*/
+
+.OFFOFF .menu-button {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 1%;
+	left: 12%;
+}
+
+#menu-button {
+	transition: left 0.4s;
+}
+
+#menu-button.expanded {
+	left: 84%;
+}
+
+
+.OFFOFF .rectangle-4 {
+	width: 50px;
+	height: 10px;
+	top: 0;
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	background-color: #d9d9d9;
+}
+
+.OFFOFF .rectangle-5 {
+	width: 50px;
+	height: 10px;
+	top: 20px;
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	background-color: #d9d9d9;
+}
+
+.OFFOFF .rectangle-6 {
+	width: 50px;
+	height: 10px;
+	top: 40px;
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	background-color: #d9d9d9;
+}
+
+/*Icon ここから*/
+
+.OFFOFF .Icon {
+	position: absolute;
+	width: 57px;
+	height: 57px;
+	top: 783px;
+	left: 9%;
+}
+
+.OFFOFF .Icon-overlap {
+	position: absolute;
+	width: 55px;
+	height: 55px;
+	background-color: #ffffff;
+}
+
+.OFFOFF .Icon-text-wrapper {
+	position: absolute;
+	top: 7px;
+	left: 9px;
+	font-family: "Inter", Helvetica;
+	font-weight: 400;
+	color: #000000;
+	font-size: 12px;
+	letter-spacing: 0;
+	line-height: normal;
+}
+
+#Icon {
+	/*	position: absolute;*/
+	transition: left 0.4s;
+}
+
+#Icon.expanded {
+	/*	position: absolute;*/
+	left: 82%;
+}
+
+/*Icon ここまで*/
+
+/*board ここから*/
+
+.OFFOFF .board {
+	position: absolute;
+	width: 95.5%;
+	height: 98%;
+	top: 1%;
+	left: 4%;
+	background-color: #d7d7d7;
+}
+
+/*board ここまで*/
+
+.OFFOFF .group-3 {
+	position: absolute;
+	width: calc(33.3333% - 0.5%);
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.OFFOFF .overlap-3 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+
+.OFFOFF .text-wrapper-3 {
+	position: absolute;
+	top: 56px;
+	left: 56px;
+	font-family: "Inter", Helvetica;
+	font-weight: 400;
+	color: #000000;
+	font-size: 30px;
+	letter-spacing: 0;
+	line-height: normal;
+	white-space: nowrap;
+}
+
+.OFFOFF .group-4 {
+	position: absolute;
+	width: calc(33.3333% - 0.5%);
+	height: 49.5%;
+	top: 0%;
+	left: 33.3333%
+}
+
+.OFFOFF .overlap-4 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+
+.OFFOFF .text-wrapper-4 {
+	position: absolute;
+	top: 95px;
+	left: 149px;
+	font-family: "Inter", Helvetica;
+	font-weight: 400;
+	color: #000000;
+	font-size: 30px;
+	letter-spacing: 0;
+	line-height: normal;
+	white-space: nowrap;
+}
+
+.OFFOFF .group-5 {
+	position: absolute;
+	width: calc(33.3333% - 0.5%);
+	height: 49.5%;
+	top: 50.5%;
+	left: 33.3333%
+}
+
+.OFFOFF .overlap-5 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+
+.OFFOFF .text-wrapper-5 {
+	position: absolute;
+	top: 102px;
+	left: 157px;
+	font-family: "Inter", Helvetica;
+	font-weight: 400;
+	color: #000000;
+	font-size: 30px;
+	letter-spacing: 0;
+	line-height: normal;
+	white-space: nowrap;
+}
+
+.OFFOFF .group-6 {
+	position: absolute;
+	width: 33.3333%;
+	height: 49.5%;
+	top: 0%;
+	left: 66.6666%;
+}
+
+.OFFOFF .overlap-6 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+
+.OFFOFF .text-wrapper-6 {
+	position: absolute;
+	top: 102px;
+	left: 136px;
+	font-family: "Inter", Helvetica;
+	font-weight: 400;
+	color: #000000;
+	font-size: 30px;
+	letter-spacing: 0;
+	line-height: normal;
+	white-space: nowrap;
+}
+
+.OFFOFF .group-7 {
+	position: absolute;
+	width: 33.3333%;
+	height: 49.5%;
+	top: 50.5%;
+	left: 66.6666%;
+}
+
+.OFFOFF .overlap-7 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+
+.OFFOFF .text-wrapper-7 {
+	position: absolute;
+	top: 114px;
+	left: 148px;
+	font-family: "Inter", Helvetica;
+	font-weight: 400;
+	color: #000000;
+	font-size: 30px;
+	letter-spacing: 0;
+	line-height: normal;
+	white-space: nowrap;
+}
